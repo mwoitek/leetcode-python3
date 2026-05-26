@@ -14,6 +14,6 @@ class Solution:
                     break
             temp = ceil(len(digits) / 2)
             for i in range(temp):
-                if digits[i] != digits[- i - 1]:
+                if digits[i] != digits[-i - 1]:
                     return False
             return True

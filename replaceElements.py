@@ -1,7 +1,7 @@
 def find_max_right(arr, idx, L1):
     if idx == L1:
         return -1
-    right = arr[idx + 1:]
+    right = arr[idx + 1 :]
     return max(right)
 
 

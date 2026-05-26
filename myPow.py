@@ -7,4 +7,5 @@ class Solution:
                 return helper(x * x, n / 2)
             else:
                 return x * helper(x * x, (n - 1) / 2)
+
         return helper(x, n) if n >= 0 else 1 / helper(x, -n)

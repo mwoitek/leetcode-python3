@@ -31,7 +31,7 @@ class Solution:
         L = len(numbers) - 1
 
         while (i < L) and (compl >= numbers[i]):
-            temp = bsearch(numbers[i + 1:], compl)
+            temp = bsearch(numbers[i + 1 :], compl)
             if temp != -1:
                 i += 1
                 temp += 1

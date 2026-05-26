@@ -24,8 +24,8 @@ class Solution:
             return -1
 
         nums_ord = L * [0]
-        nums_ord[:(L - k)] = nums[k:]
-        nums_ord[(L - k):] = nums[:k]
+        nums_ord[: (L - k)] = nums[k:]
+        nums_ord[(L - k) :] = nums[:k]
 
         left = 0
         right = L - 1

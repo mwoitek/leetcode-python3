@@ -27,6 +27,6 @@ class Solution:
                 ones[i] = temp[0]
                 i += 1
             else:
-                ones[i:i + L] = sorted(temp)
+                ones[i : i + L] = sorted(temp)
                 i += L
         return ones

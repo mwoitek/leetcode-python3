@@ -16,7 +16,7 @@ class Solution:
 
         while i < L - 2:
             if s[i + 2] == "#":
-                s_out += dic[s[i:i + 3]]
+                s_out += dic[s[i : i + 3]]
                 i += 3
             else:
                 s_out += dic[s[i]]

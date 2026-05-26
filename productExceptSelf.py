@@ -9,7 +9,7 @@ class Solution:
 
         output = np.zeros(L, dtype=np.int_)
 
-        idx_zeros = (nums == 0)
+        idx_zeros = nums == 0
         num_zeros = nums[idx_zeros].size
 
         if num_zeros > 1:
@@ -18,7 +18,7 @@ class Solution:
             output[idx_zeros] = np.prod(nums[nums != 0], dtype=np.int_)
             return output
         else:
-            idx_neg = (nums < 0)
+            idx_neg = nums < 0
             num_neg = nums[idx_neg].size
             output = np.absolute(nums, dtype=np.int_)
             output = np.log(output, dtype=np.float_)
